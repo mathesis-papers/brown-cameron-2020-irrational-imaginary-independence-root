@@ -1,0 +1,734 @@
+{
+  "arithmetic": "unbounded integers and exact rational fractions",
+  "base_witness": {
+    "adjacency_sha256": "feaee60f41d6e4c40065f3e2c1ec16a44f051845b8c543721f3fa5171c4832a5",
+    "connected": true,
+    "edges": 7998,
+    "independent_counts": [
+      1,
+      128,
+      130,
+      256,
+      256
+    ],
+    "root_remainder": [
+      "0",
+      "0"
+    ],
+    "total_independent_sets": 771,
+    "vertices": 128
+  },
+  "clique_and_padding_checks": [
+    {
+      "clique_size": 1,
+      "connected": true,
+      "edges": 7998,
+      "independent_counts": [
+        1,
+        128,
+        130,
+        256,
+        256
+      ],
+      "isolates": 0,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 128
+    },
+    {
+      "clique_size": 1,
+      "connected": false,
+      "edges": 7998,
+      "independent_counts": [
+        1,
+        129,
+        258,
+        386,
+        512,
+        256
+      ],
+      "isolates": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 129
+    },
+    {
+      "clique_size": 1,
+      "connected": false,
+      "edges": 7998,
+      "independent_counts": [
+        1,
+        130,
+        387,
+        644,
+        898,
+        768,
+        256
+      ],
+      "isolates": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 130
+    },
+    {
+      "clique_size": 2,
+      "connected": true,
+      "edges": 32120,
+      "independent_counts": [
+        1,
+        256,
+        520,
+        2048,
+        4096
+      ],
+      "isolates": 0,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 256
+    },
+    {
+      "clique_size": 2,
+      "connected": false,
+      "edges": 32120,
+      "independent_counts": [
+        1,
+        257,
+        776,
+        2568,
+        6144,
+        4096
+      ],
+      "isolates": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 257
+    },
+    {
+      "clique_size": 2,
+      "connected": false,
+      "edges": 32120,
+      "independent_counts": [
+        1,
+        258,
+        1033,
+        3344,
+        8712,
+        10240,
+        4096
+      ],
+      "isolates": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 258
+    },
+    {
+      "clique_size": 3,
+      "connected": true,
+      "edges": 72366,
+      "independent_counts": [
+        1,
+        384,
+        1170,
+        6912,
+        20736
+      ],
+      "isolates": 0,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 384
+    },
+    {
+      "clique_size": 3,
+      "connected": false,
+      "edges": 72366,
+      "independent_counts": [
+        1,
+        385,
+        1554,
+        8082,
+        27648,
+        20736
+      ],
+      "isolates": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 385
+    },
+    {
+      "clique_size": 3,
+      "connected": false,
+      "edges": 72366,
+      "independent_counts": [
+        1,
+        386,
+        1939,
+        9636,
+        35730,
+        48384,
+        20736
+      ],
+      "isolates": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 386
+    }
+  ],
+  "connected_completions": [
+    {
+      "connected": true,
+      "edges": 23057,
+      "independence_number": 4,
+      "independent_counts": [
+        1,
+        216,
+        163,
+        216,
+        162
+      ],
+      "n": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 216
+    },
+    {
+      "connected": true,
+      "edges": 23165,
+      "independence_number": 5,
+      "independent_counts": [
+        1,
+        217,
+        271,
+        298,
+        270,
+        81
+      ],
+      "n": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 217
+    },
+    {
+      "connected": true,
+      "edges": 23273,
+      "independence_number": 6,
+      "independent_counts": [
+        1,
+        218,
+        380,
+        488,
+        460,
+        270,
+        81
+      ],
+      "n": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 218
+    },
+    {
+      "connected": true,
+      "edges": 23381,
+      "independence_number": 7,
+      "independent_counts": [
+        1,
+        219,
+        490,
+        787,
+        840,
+        649,
+        351,
+        81
+      ],
+      "n": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 219
+    },
+    {
+      "connected": true,
+      "edges": 371518,
+      "independence_number": 4,
+      "independent_counts": [
+        1,
+        864,
+        1298,
+        1728,
+        2592
+      ],
+      "n": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 864
+    },
+    {
+      "connected": true,
+      "edges": 371950,
+      "independence_number": 5,
+      "independent_counts": [
+        1,
+        865,
+        1730,
+        2378,
+        3456,
+        1296
+      ],
+      "n": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 865
+    },
+    {
+      "connected": true,
+      "edges": 372382,
+      "independence_number": 6,
+      "independent_counts": [
+        1,
+        866,
+        2163,
+        3460,
+        4970,
+        3456,
+        1296
+      ],
+      "n": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 866
+    },
+    {
+      "connected": true,
+      "edges": 372814,
+      "independence_number": 7,
+      "independent_counts": [
+        1,
+        867,
+        2597,
+        4975,
+        7566,
+        7130,
+        4752,
+        1296
+      ],
+      "n": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 867
+    },
+    {
+      "connected": true,
+      "edges": 1884219,
+      "independence_number": 4,
+      "independent_counts": [
+        1,
+        1944,
+        4377,
+        5832,
+        13122
+      ],
+      "n": 3,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 1944
+    },
+    {
+      "connected": true,
+      "edges": 1885191,
+      "independence_number": 5,
+      "independent_counts": [
+        1,
+        1945,
+        5349,
+        8022,
+        16038,
+        6561
+      ],
+      "n": 3,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 1945
+    },
+    {
+      "connected": true,
+      "edges": 1886163,
+      "independence_number": 6,
+      "independent_counts": [
+        1,
+        1946,
+        6322,
+        11184,
+        21144,
+        16038,
+        6561
+      ],
+      "n": 3,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 1946
+    },
+    {
+      "connected": true,
+      "edges": 1887135,
+      "independence_number": 7,
+      "independent_counts": [
+        1,
+        1947,
+        7296,
+        15319,
+        29412,
+        30621,
+        22599,
+        6561
+      ],
+      "n": 3,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 1947
+    }
+  ],
+  "induced_embeddings": [
+    {
+      "connected": true,
+      "edges": 23383,
+      "independent_counts": [
+        1,
+        219,
+        488,
+        570,
+        568,
+        351,
+        81
+      ],
+      "induced_graph": "path3",
+      "n": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 219
+    },
+    {
+      "connected": true,
+      "edges": 23384,
+      "independent_counts": [
+        1,
+        219,
+        487,
+        462,
+        486,
+        243
+      ],
+      "induced_graph": "triangle",
+      "n": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 219
+    },
+    {
+      "connected": true,
+      "edges": 23273,
+      "independent_counts": [
+        1,
+        218,
+        380,
+        488,
+        460,
+        270,
+        81
+      ],
+      "induced_graph": "edgeless2",
+      "n": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 218
+    },
+    {
+      "connected": true,
+      "edges": 372816,
+      "independent_counts": [
+        1,
+        867,
+        2595,
+        4110,
+        5834,
+        4752,
+        1296
+      ],
+      "induced_graph": "path3",
+      "n": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 867
+    },
+    {
+      "connected": true,
+      "edges": 372817,
+      "independent_counts": [
+        1,
+        867,
+        2594,
+        3678,
+        5184,
+        3888
+      ],
+      "induced_graph": "triangle",
+      "n": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 867
+    },
+    {
+      "connected": true,
+      "edges": 372382,
+      "independent_counts": [
+        1,
+        866,
+        2163,
+        3460,
+        4970,
+        3456,
+        1296
+      ],
+      "induced_graph": "edgeless2",
+      "n": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 866
+    },
+    {
+      "connected": true,
+      "edges": 1887137,
+      "independent_counts": [
+        1,
+        1947,
+        7294,
+        13374,
+        24060,
+        22599,
+        6561
+      ],
+      "induced_graph": "path3",
+      "n": 3,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 1947
+    },
+    {
+      "connected": true,
+      "edges": 1887138,
+      "independent_counts": [
+        1,
+        1947,
+        7293,
+        12402,
+        21870,
+        19683
+      ],
+      "induced_graph": "triangle",
+      "n": 3,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 1947
+    },
+    {
+      "connected": true,
+      "edges": 1886163,
+      "independent_counts": [
+        1,
+        1946,
+        6322,
+        11184,
+        21144,
+        16038,
+        6561
+      ],
+      "induced_graph": "edgeless2",
+      "n": 3,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 1946
+    }
+  ],
+  "neutral_graphs": [
+    {
+      "connected": true,
+      "edges": 5697,
+      "independent_counts": [
+        1,
+        108,
+        81,
+        108,
+        81
+      ],
+      "n": 1,
+      "root_remainder": [
+        "1",
+        "0"
+      ],
+      "vertices": 108
+    },
+    {
+      "connected": true,
+      "edges": 92448,
+      "independent_counts": [
+        1,
+        432,
+        648,
+        864,
+        1296
+      ],
+      "n": 2,
+      "root_remainder": [
+        "1",
+        "0"
+      ],
+      "vertices": 432
+    },
+    {
+      "connected": true,
+      "edges": 469719,
+      "independent_counts": [
+        1,
+        972,
+        2187,
+        2916,
+        6561
+      ],
+      "n": 3,
+      "root_remainder": [
+        "1",
+        "0"
+      ],
+      "vertices": 972
+    }
+  ],
+  "parameter_witnesses": [
+    {
+      "connected": true,
+      "edges": 5696,
+      "independent_counts": [
+        1,
+        108,
+        82,
+        108,
+        81
+      ],
+      "n": 1,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 108
+    },
+    {
+      "connected": true,
+      "edges": 92446,
+      "independent_counts": [
+        1,
+        432,
+        650,
+        864,
+        1296
+      ],
+      "n": 2,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 432
+    },
+    {
+      "connected": true,
+      "edges": 469716,
+      "independent_counts": [
+        1,
+        972,
+        2190,
+        2916,
+        6561
+      ],
+      "n": 3,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 972
+    },
+    {
+      "connected": true,
+      "edges": 1486940,
+      "independent_counts": [
+        1,
+        1728,
+        5188,
+        6912,
+        20736
+      ],
+      "n": 4,
+      "root_remainder": [
+        "0",
+        "0"
+      ],
+      "vertices": 1728
+    }
+  ],
+  "root_remainder_convention": "constant and linear coefficients after z\u00b2=-1/n",
+  "scope": "Exhaustive independent-subset enumeration of each listed graph; exact coefficient, connectivity, induced-subgraph and root-remainder checks. The all-parameter statements and tree consequences have written proofs."
+}

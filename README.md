@@ -1,9 +1,27 @@
-# Mathesis paper template
+# Extending Brown and Cameron's classification of purely imaginary independence roots
 
-One repository for one exact Mathesis paper version. This template has no selected paper and no example books.
+**Authors:** Haobo Ma, Wenlin Zhang
 
-Authors can start from the [Mathesis LaTeX manuscript template](docs/layer-mathesis/MANUSCRIPT.md) for papers and short notes. Our own short notes use it as their default reference; sections and length follow the mathematical argument.
+Extending Brown and Cameron's rational classification (2020, arXiv:2001.08881v2, Proposition 2.9, p. 8), we answer their Question 2 (p. 11) affirmatively and classify all purely imaginary independence roots whose imaginary part has rational square: they are exactly ±i/√n for positive integers n. An explicit connected graph of independence number four realizes each pair. A second graph whose independence polynomial takes the value one at these roots gives connected examples of every independence number at least four and connected induced supergraphs of arbitrary finite graphs. Bencs's tree-transfer theorem gives infinitely many trees for each pair. A smaller 128-vertex example realizes ±i/√2.
 
-The upstream books template supplies the machinery; the Mathesis layer supplies the publisher adapter and the [enforced four-zone layout](docs/layer-mathesis/LAYOUT.md).
+- PDF: [frozen public file](paper.pdf)
+- License: CC-BY-4.0
+- Version: 2
+- Mathesis record: [brown-cameron-2020-irrational-imaginary-independence-root](https://mathesis-omega-research.apps.chrono-ai.fun/papers/brown-cameron-2020-irrational-imaginary-independence-root?version=2)
 
-Use [the publisher pipeline](docs/layer-mathesis/PIPELINE.md) to import a public projection with `paper.py fill`. It creates the paper record, one bilingual content skeleton and a generated paper README. Upgrade with `tbook template update`; keep preparation run records outside the repository.
+## How to cite
+
+Haobo Ma, Wenlin Zhang (2026). Extending Brown and Cameron's classification of purely imaginary independence roots. Mathesis, version 2. https://mathesis-omega-research.apps.chrono-ai.fun/papers/brown-cameron-2020-irrational-imaginary-independence-root?version=2
+
+## Statement progress
+
+| Statement | Formalization status | Source | Verification basis |
+|---|---|---|---|
+| Theorem (s1) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/1f6fb1ff47df504e8dce0cd5cda2403a7aaa622e/D5/S3/StatisticalMechanics/HardCore/IrrationalIndependenceRoot.lean) | No public receipt |
+| Lemma (s2) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/1f6fb1ff47df504e8dce0cd5cda2403a7aaa622e/D5/S3/StatisticalMechanics/HardCore/IrrationalIndependenceRoot.lean) | No public receipt |
+| Corollary (s3) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/1f6fb1ff47df504e8dce0cd5cda2403a7aaa622e/D5/S3/StatisticalMechanics/HardCore/IrrationalIndependenceRoot.lean) | No public receipt |
+| Corollary (s4) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/1f6fb1ff47df504e8dce0cd5cda2403a7aaa622e/D5/S3/StatisticalMechanics/HardCore/IrrationalIndependenceRoot.lean) | No public receipt |
+
+## Contributions
+
+Original authors are listed above. Formalization contributors and attribution are retained in `formalization/nodes.json`; repository pull requests do not confer verification or credit. Submit formalization attempts through the Mathesis attempt path described in [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 76832,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "8b36f6dbab083efde142613d96bee54c63fcf16d1b5162c942241db719c4966b",
+      "sha256": "8b36f6dbab083efde142613d96bee54c63fcf16d1b5162c942241db719c4966b"
+    },
+    "source": {
+      "bytes": 14775,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "0c52badcb3542d61f02154a71f6ba20bfb61b10d9118ac2da7cd2641d6e2ec2a",
+      "sha256": "0c52badcb3542d61f02154a71f6ba20bfb61b10d9118ac2da7cd2641d6e2ec2a"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Extending Brown and Cameron's rational classification (2020, arXiv:2001.08881v2, Proposition 2.9, p. 8), we answer their Question 2 (p. 11) affirmatively and classify all purely imaginary independence roots whose imaginary part has rational square: they are exactly ±i/√n for positive integers n. An explicit connected graph of independence number four realizes each pair. A second graph whose independence polynomial takes the value one at these roots gives connected examples of every independence number at least four and connected induced supergraphs of arbitrary finite graphs. Bencs's tree-transfer theorem gives infinitely many trees for each pair. A smaller 128-vertex example realizes ±i/√2.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "1f6fb1ff47df504e8dce0cd5cda2403a7aaa622e",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/1f6fb1ff47df504e8dce0cd5cda2403a7aaa622e/D5/S3/StatisticalMechanics/HardCore/IrrationalIndependenceRoot.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 76832,
+      "sha256": "8b36f6dbab083efde142613d96bee54c63fcf16d1b5162c942241db719c4966b",
+      "url": "/api/v1/collected-papers/brown-cameron-2020-irrational-imaginary-independence-root/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T17:34:15.910931188Z",
+    "record": "brown-cameron-2020-irrational-imaginary-independence-root",
+    "repository_name": "brown-cameron-2020-irrational-imaginary-independence-root",
+    "source": {
+      "bytes": 14775,
+      "sha256": "0c52badcb3542d61f02154a71f6ba20bfb61b10d9118ac2da7cd2641d6e2ec2a",
+      "url": "/api/v1/collected-papers/brown-cameron-2020-irrational-imaginary-independence-root/files/source?version=2"
+    },
+    "title": "Extending Brown and Cameron's classification of purely imaginary independence roots",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T17:34:15.910931188Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "brown-cameron-2020-irrational-imaginary-independence-root"
+  }
+}

@@ -1,0 +1,333 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,longtable}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\ii}{\mathrm{i}}
+\title{Extending Brown and Cameron's classification of purely imaginary independence roots}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{November 19, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Extending Brown and Cameron's rational classification (2020,
+arXiv:2001.08881v2, Proposition 2.9, p.~8), we answer their Question 2
+(p.~11) affirmatively and classify all purely imaginary independence roots
+whose imaginary part has rational square: they are exactly
+$\pm\ii/\sqrt{n}$ for positive integers $n$.
+An explicit connected graph of independence number four realizes each pair.
+A second graph whose independence polynomial takes the value one at these
+roots gives connected examples of every independence number at least four
+and connected induced supergraphs of arbitrary finite graphs.
+Bencs's tree-transfer theorem gives infinitely many trees for each pair.
+A smaller 128-vertex example realizes $\pm\ii/\sqrt{2}$.
+\end{abstract}
+
+\section{The question and the classification}
+Brown and Cameron ask whether a purely imaginary independence root can
+have an irrational imaginary part \cite[Question 2, p.~11]{BC}.
+We give an affirmative answer and determine every possibility with rational
+squared imaginary part. Their Proposition 2.9 classifies the rational
+imaginary parts as the nonzero reciprocals of integers. Its rational-root
+argument already supplies the necessary restriction on rational squares;
+the construction below realizes every permitted square, including all
+nonsquare denominators.
+The clique-substitution identity in Cameron's thesis
+\cite[Theorem 3.3.4, p.~40]{Cameron}, together with its
+$\pm\ii$ examples \cite[Proposition 3.4.1, p.~43]{Cameron}, already
+implies the rational reciprocal examples; Brown and Cameron give their
+explicit classification in 2020.
+
+All graphs are finite and simple. For a graph $H$, an independent set is
+a vertex subset containing no adjacent pair. Write $s_k(H)$ for the number
+of independent $k$-subsets, $\alpha(H)$ for the largest such $k$, and
+\[
+ I(H,x)=\sum_{k=0}^{\alpha(H)}s_k(H)x^k.
+\]
+The empty set gives $s_0(H)=1$. An independence root is a complex zero of
+this polynomial, and $\ii^2=-1$. The complete graph on $t$ vertices is
+$K_t$; the edgeless graph on $t$ vertices is $E_t$ (including $E_0$).
+For graphs on disjoint vertex sets, $H\sqcup J$ is their disjoint union,
+and the join $H+J$ additionally joins every vertex of $H$ to every vertex
+of $J$. Independent sets therefore give
+\begin{equation}\label{eq:operations}
+ I(H\sqcup J,x)=I(H,x)I(J,x),\qquad
+ I(H+J,x)=I(H,x)+I(J,x)-1.
+\end{equation}
+In the second identity a nonempty independent set lies in exactly one
+factor. These are the join and substitution methods used in \cite{BC}.
+
+For each positive integer $n$, define the positive integers
+\[
+ r_n=81n^2-54n=27n(3n-2),\qquad d_n=27n^2+41n,
+\]
+and the graphs
+\begin{align*}
+ A_n&=K_{3n}\sqcup K_{3n}\sqcup K_{3n}\sqcup K_{3n},\\
+ G_n&=A_n+(K_n\sqcup K_{r_n+1})+K_{d_n-1},\\
+ J_n&=A_n+(K_n\sqcup K_{r_n})+K_{d_n}.
+\end{align*}
+Both joins have three nonempty factors; in particular $d_n-1\geq67$.
+
+\begin{theorem}\label{thm:classification}
+Let $b\neq0$ be real and suppose $b^2\in\mathbb Q$. Some finite graph
+has independence root $\ii b$ if and only if $b^2=1/n$ for a positive
+integer $n$. For every such $n$, the connected graph $G_n$ has
+$108n^2$ vertices, independence number four, and
+\begin{equation}\label{eq:general}
+ I(G_n,x)=(1+nx^2)(1+108n^2x+81n^3x^2).
+\end{equation}
+The number $1/\sqrt n$ is irrational exactly when $n$ is not a perfect square.
+\end{theorem}
+\begin{proof}
+For necessity, let
+$E_H(t)=\sum_j s_{2j}(H)t^j$ be the even-coefficient polynomial of a
+graph $H$. The real part of $I(H,\ii b)=0$ gives $E_H(-b^2)=0$.
+This is an integer polynomial with constant term one. By the rational-root
+theorem, the numerator of a rational root in lowest terms divides one.
+Since $b\neq0$, its square is positive, so $b^2=1/n$ for an integer $n>0$.
+This is the same necessity argument as \cite[Proposition 2.9]{BC}, without
+requiring $b$ itself to be rational.
+
+For sufficiency, use $I(K_t,x)=1+tx$ and \eqref{eq:operations} to obtain
+\begin{align*}
+ I(G_n,x)&=(1+3nx)^4+
+       \bigl((1+nx)(1+(r_n+1)x)-1\bigr)+(d_n-1)x\\
+ &=1+108n^2x+(n+81n^3)x^2+108n^3x^3+81n^4x^4.
+\end{align*}
+Here the linear coefficient is
+$12n+n+r_n+d_n=108n^2$ and the quadratic coefficient is
+$54n^2+n(r_n+1)=81n^3+n$. Multiplication proves
+\eqref{eq:general}. At $z=\pm\ii/\sqrt n$, the factor $1+nz^2$ vanishes.
+
+The order is $12n+n+(r_n+1)+(d_n-1)=108n^2$.
+The final nonempty clique is adjacent to every vertex in the other
+factors, so $G_n$ is connected. An independent set in $A_n$ has at most
+one vertex from each of four cliques, and such a four-set exists.
+The other two join factors have independence numbers two and one.
+Thus $\alpha(G_n)=4$.
+
+Finally, if $1/\sqrt n=u/v$ for coprime positive integers $u,v$, then
+$nu^2=v^2$. A prime dividing $u$ would also divide $v$, so $u=1$ and
+$n=v^2$. Conversely a perfect-square $n$ gives a rational reciprocal
+square root. This proves the last assertion.
+\end{proof}
+
+\section{Connected completions and trees}
+Theorem~\ref{thm:classification} in particular gives $|b|\leq1$ when
+$b^2$ is rational. Cameron's separate question about $|b|>1$
+\cite[fourth question]{CameronQ} is therefore not settled here:
+any such example would have irrational $b^2$.
+
+The companion graph $J_n$ permits connectedness without changing the roots.
+\begin{lemma}\label{lem:neutral}
+The graph $J_n$ has $108n^2$ vertices, independence number four, and
+\begin{equation}\label{eq:neutral}
+ I(J_n,x)=1+(1+nx^2)(108n^2x+81n^3x^2).
+\end{equation}
+Consequently, if $I(Q,z)=0$ and $z=\pm\ii/\sqrt n$, then $Q+J_n$
+is connected and has independence root $z$ and independence number
+$\max\{\alpha(Q),4\}$.
+\end{lemma}
+\begin{proof}
+Relative to $G_n$, the factor $K_n\sqcup K_{r_n+1}$ loses one vertex
+in its second clique, while the final clique gains one. The changes
+to their independence polynomials are $-x-nx^2$ and $+x$.
+Thus $I(J_n,x)=I(G_n,x)-nx^2$, which is \eqref{eq:neutral}.
+The order is unchanged; the same join-factor argument gives independence
+number four. At either specified $z$, equation \eqref{eq:neutral}
+gives $I(J_n,z)=1$, so \eqref{eq:operations} gives
+$I(Q+J_n,z)=I(Q,z)+1-1=0$.
+A graph with such a root is nonempty, and $J_n$ is nonempty, so their
+join is connected. Independent sets in a join stay in one factor,
+giving the stated maximum.
+\end{proof}
+
+\begin{corollary}\label{cor:completion}
+Fix $n\geq1$.
+For every integer $a\geq4$ there is a connected graph of independence
+number $a$ with roots $\pm\ii/\sqrt n$.
+Every finite graph $H$ is an induced subgraph of a connected graph
+with these same roots.
+\end{corollary}
+\begin{proof}
+For the first assertion take
+$(G_n\sqcup E_{a-4})+J_n$.
+Before the join its polynomial is $I(G_n,x)(1+x)^{a-4}$ and its
+independence number is $a$. Apply Lemma~\ref{lem:neutral}.
+For the second take $(G_n\sqcup H)+J_n$.
+The disjoint union retains the roots of $G_n$, and the join does not
+alter adjacency among the vertices of $H$.
+This graph has $216n^2+|V(H)|$ vertices and independence number
+$4+\alpha(H)$, also when $H$ is empty.
+\end{proof}
+
+These extend the rational-root conclusions of
+\cite[Theorems 2.8 and 2.12]{BC} to every rational squared imaginary part
+permitted by Theorem~\ref{thm:classification}. The existence of independence
+number four examples is consistent with the obstruction
+$\alpha\leq3$ in \cite[Proposition 2.1]{BC}.
+
+\begin{corollary}\label{cor:trees}
+For each positive integer $n$ there are infinitely many pairwise
+nonisomorphic finite trees with independence roots $\pm\ii/\sqrt n$.
+None of these trees has a universal vertex.
+\end{corollary}
+\begin{proof}
+Bencs \cite[Proposition 2.7(1)]{Bencs} proves that for every connected
+finite graph $H$ there are a tree $T$ and induced subgraphs
+$H_1,\ldots,H_t$ of $H$ such that
+\[
+ I(T,x)=I(H,x)\prod_{j=1}^t I(H_j,x).
+\]
+This is also \cite[Proposition 3.1]{BC}.
+Apply it to the connected graphs of independence number $a$ in
+Corollary~\ref{cor:completion}, for arbitrarily large $a$.
+Their specified roots are roots of the tree polynomials. Since
+$\deg I(T,x)=\alpha(T)\geq\alpha(H)=a$, the resulting trees have
+unbounded independence number, hence infinitely many isomorphism types.
+This extends \cite[Corollary 3.2]{BC}, which treats $\pm\ii/m$.
+A tree with a universal vertex is a star, with polynomial $(1+x)^t+x$.
+If $t>0$ and $z=\pm\ii/\sqrt n$, then $|1+z|^t>1\geq|z|$, so
+the polynomial cannot vanish. For $t=0$ the graph is $K_1$, whose root
+is $-1$. Thus any tree with one of the specified roots has no universal vertex.
+\end{proof}
+
+\section{A smaller irrational example}
+Let $A$ be four disjoint copies of $K_4$, let $B$ be the join of
+34 copies of $E_2$, and set $W=A+B+K_{44}$.
+The pairs in $B$ are completely adjacent to one another.
+Then \eqref{eq:operations} gives
+\begin{align*}
+ I(W,x)&=(1+4x)^4+34(2x+x^2)+44x\\
+ &=1+128x+130x^2+256x^3+256x^4\\
+ &=(1+2x^2)(1+128x+128x^2).
+\end{align*}
+Thus $W$ has roots $\pm\ii/\sqrt2$. Its order is $16+68+44=128$,
+its final clique makes it connected, and its join factors show that its
+independence number is four. This is smaller than $G_2$, which has 432
+vertices. Clique substitution replaces each vertex of $H$ by $K_m$,
+joining replacement cliques according to the edges of $H$. Every independent
+$k$-set lifts in $m^k$ ways, so $I(H[K_m],x)=I(H,mx)$, the clique case of
+Brown--Hickman--Nowakowski's substitution theorem \cite[Theorem 1]{BHN},
+also \cite[Theorem 2.6]{BC}. In particular $W[K_m]$ has roots
+$\pm\ii/(m\sqrt2)$ for every positive integer $m$.
+
+\section{Source coverage and mathematical support}
+Table~\ref{tab:coverage} records the related source statements.
+The posing locator is Question 2 on printed p.~11 of arXiv v2, not a
+journal-page locator. The table's extensions are proved above; prior
+results retain their original attribution.
+\small
+\begin{longtable}{@{}p{0.42\linewidth}p{0.53\linewidth}@{}}
+\caption{Coverage of the posing source and closely related statements.}\label{tab:coverage}\\
+\toprule Source item & Coverage\\\midrule\endfirsthead
+\toprule Source item & Coverage (continued)\\\midrule\endhead
+\bottomrule\endfoot
+Brown--Cameron Question 2, p.~11: irrational imaginary part
+ & Answered: yes. Theorem~\ref{thm:classification} and the example $W$.\\[4pt]
+Proposition 2.9, p.~8: rational imaginary parts; exclusion after Question 2
+ & Reproved; prior proof Brown--Cameron (2020). Theorem~\ref{thm:classification}
+ extends the rational-root restriction to a classification for $b^2\in\mathbb Q$.\\[4pt]
+Theorems 2.3 and 2.5: connected examples, $\alpha=4$ and every $\alpha\geq4$
+ & Prior proof cited for roots $\pm\ii$; Corollary~\ref{cor:completion}
+ extends to $\pm\ii/\sqrt n$.\\[4pt]
+Earlier v1, Proposition 2.1 and Question 1, pp.~3 and 9:
+ exclusion boundary and possible independence numbers
+ & Prior correction and answer cited: v2, Proposition 2.1 and Theorem 2.5,
+ give exactly $\alpha\geq4$. Corollary~\ref{cor:completion} realizes all
+ these values with irrational imaginary part.\\[4pt]
+Theorem 2.6, Lemma 2.7 and Theorem 2.8: substitution and reciprocal roots
+ & Clique identity reproved; prior proof Brown--Cameron (2020), citing
+ earlier substitution theory. Irrational scales follow from $W[K_m]$.\\[4pt]
+Theorem 2.12: induced connected supergraphs
+ & Prior proof cited for $\pm\ii/m$; Corollary~\ref{cor:completion}
+ extends to all $\pm\ii/\sqrt n$.\\[4pt]
+Proposition 3.1 and Corollary 3.2: tree transfer and infinitely many trees
+ & Prior proof Bencs (2017 preprint; 2018 journal), then Brown--Cameron
+ (2020). Corollary~\ref{cor:trees} extends the rational-root consequence.\\[4pt]
+Question 1, pp.~10--11: minimum graph order
+ & Not covered. The source gives a 14-vertex example with roots $\pm\ii$;
+ $W$ is not a minimum-order assertion.\\[4pt]
+Conclusion, p.~10, and Cameron thesis, Section 3.4, p.~46:
+ possible universal-vertex restriction
+ & Not asserted in the source; fails for the trees of
+ Corollary~\ref{cor:trees}. The case $n=1$ is already a consequence of
+ Brown--Cameron's Corollary 3.2; nonsquare $n$ gives irrational examples.\\[4pt]
+Cameron thesis, Conjecture 6.2.4, p.~91: imaginary parts restricted to $\pm1$
+ & Refuted-and-corrected within $b^2\in\mathbb Q$ by
+ Theorem~\ref{thm:classification}. Cameron's 2019 substitution and
+ $\pm\ii$ examples imply rational counterexamples; Brown--Cameron
+ (2020), Theorem 2.8, states them explicitly.\\[4pt]
+Cameron thesis, Section 3.4, pp.~43--46: even/odd test, integer-root
+ obstruction and palindromic examples
+ & Prior even/odd and rational-root arguments are used in
+ Theorem~\ref{thm:classification}; the palindromic construction is not covered.\\[4pt]
+Imaginary parts with irrational square
+ & Not covered. The rational-root argument and the classification above
+ make no assertion about this class.\\
+Cameron's graph-polynomial questions, fourth item: $|b|>1$
+ & Not covered in general. Theorem~\ref{thm:classification} rules out the
+ rational-square subclass; irrational squares remain outside its scope.\\
+\end{longtable}
+\normalsize
+
+\paragraph{Verification scope.}
+The classification, connected completions, induced embeddings and tree
+consequence have written proofs above. The pinned Lean
+file\footnote{\href{https://github.com/the-omega-institute/trureturing/blob/1f6fb1ff47df504e8dce0cd5cda2403a7aaa622e/D5/S3/StatisticalMechanics/HardCore/IrrationalIndependenceRoot.lean}{\texttt{IrrationalIndependenceRoot.lean}},
+commit \texttt{1f6fb1ff47df504e8dce0cd5cda2403a7aaa622e}.}
+contains \texttt{native\_polynomial}, which proves the polynomial
+factorization, degree four and all independent-set counts for $W$, and
+\texttt{result}, which proves existence of a finite graph with an irrational
+imaginary independence root. Both are in namespace
+\texttt{D5.S3.StatisticalMechanics.HardCore.IrrationalIndependenceRoot}.
+They concern $W$, rather than the all-$n$ constructions or the tree consequence.
+The accompanying \texttt{verify.py} enumerates every independent subset
+of each graph listed in \texttt{verification.json}, checking its coefficients,
+connectivity and exact root relations. Those finite checks include
+$G_n$ for $1\leq n\leq4$, $J_n$ for $1\leq n\leq3$, connected completions
+and induced embeddings; their precise ranges are given in that file.
+
+\begin{thebibliography}{9}
+\bibitem{BHN}
+J.~I. Brown, C.~A. Hickman and R.~J. Nowakowski,
+\emph{On the location of roots of independence polynomials},
+Journal of Algebraic Combinatorics \textbf{19} (2004), 273--282.
+\href{https://doi.org/10.1023/B:JACO.0000030703.39946.70}{doi:10.1023/B:JACO.0000030703.39946.70}.
+
+\bibitem{BC}
+J.~I. Brown and B.~Cameron,
+\emph{A note on purely imaginary independence roots},
+Discrete Mathematics \textbf{343} (2020), no.~12, 112113.
+\href{https://doi.org/10.1016/j.disc.2020.112113}{doi:10.1016/j.disc.2020.112113}.
+Posing text: \href{https://arxiv.org/abs/2001.08881v2}{arXiv:2001.08881v2}.
+
+\bibitem{Bencs}
+F.~Bencs, \emph{On trees with real-rooted independence polynomial},
+Discrete Mathematics \textbf{341} (2018), no.~12, 3321--3330.
+\href{https://doi.org/10.1016/j.disc.2018.06.033}{doi:10.1016/j.disc.2018.06.033}.
+The tree-transfer theorem is Proposition 2.7(1) of
+\href{https://arxiv.org/abs/1703.05409v1}{arXiv:1703.05409v1}.
+
+\bibitem{Cameron}
+B.~R.~K. Cameron, \emph{On the roots of independence polynomials},
+Ph.D. thesis, Dalhousie University, March 2019.
+\href{https://dalspace.library.dal.ca/server/api/core/bitstreams/c903bf10-142c-4ffe-965a-1927ad52197a/content}{Dalhousie institutional copy},
+Conjecture 6.2.4, p.~91.
+
+\bibitem{CameronQ}
+B.~Cameron, \emph{Graph polynomials}, institutional research questions,
+fourth question, undated.
+\href{https://www.smcs.upei.ca/~brcameron/graphpolys.html}{University of Prince Edward Island page},
+accessed November 19, 2026.
+\end{thebibliography}
+\smallskip
+\noindent\small Licensed under Creative Commons Attribution 4.0 International
+(CC BY 4.0).
+\end{document}
