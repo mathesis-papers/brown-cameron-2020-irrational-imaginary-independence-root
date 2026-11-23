@@ -18,19 +18,19 @@
   "generator_version": "0.1.0",
   "sha256": {
     "CHANGELOG.md": "9b70bf2153b86a9cbff935abdf8e843d29ed47f53873881d083f20306a12c4c3",
-    "CITATION.cff": "215f3a952543ea373de1a51503a980b5fe932b2b942a2dadd754d345d5acf274",
+    "CITATION.cff": "3ae6b58e7e925d505dec3ee2562e2bdb72fa991b9ceea9d7f0933ae884f7ec1d",
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
     "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
-    "README.md": "359d9240a1eff5ee1992d31e5fed5a479056c335fca65d07a619f321445d3772",
+    "README.md": "da8cc30836ddcfecc546acddd718c93551d6607709da1c2cf2d666c42eeb6114",
     "formalization/nodes.json": "00be34326b8c7299a2f0da720a0db44655a87eafb9aed0679b491da6b017aa40",
     "manuscript/irrational-independence-roots/README.md": "5e8b7b396e101cf1658381c08c960301aa99f186db736b7ac1c0130a0f034590",
     "manuscript/irrational-independence-roots/metadata.json": "1df81aa8fed59f550a3c0d92a368989addd0dc443a0bb0bd5a4f488671a3a744",
     "manuscript/irrational-independence-roots/note.tex": "8495b4dbf98c1878a57bfb60184a3fe8dd588f07d4e26aba4407a6daac8c4bb2",
     "manuscript/irrational-independence-roots/verification.json": "ecfc0c2277e7c11717b000bfc04a80f38845e4ee2e9184ca2206e6d1fa32945a",
     "manuscript/irrational-independence-roots/verify.py": "e1aa3fd3a20930af6a69c5760c3df1e6cfec58f325a0b338306f2af05286e3c0",
-    "paper.json": "1ac562b744c99201c4238c13f0ff3be6e54ea333dd0a50a830584197677330d4",
+    "paper.json": "911aa1fc648d197ec7f24d1957fe3479f02131645f25b03e7cee5c8e47ff6c3c",
     "paper.pdf": "8b36f6dbab083efde142613d96bee54c63fcf16d1b5162c942241db719c4966b",
     "source.archive": "0c52badcb3542d61f02154a71f6ba20bfb61b10d9118ac2da7cd2641d6e2ec2a"
   },
-  "snapshot_identity": "beb2ea7de0e7ae06da81f91492b059c38242437042d4cfa5afb58745b76f9e3d"
+  "snapshot_identity": "a9e7c6ac29198007c90206569ccf44777c42346a6a4851e110ed30a5854b2c4b"
 }
