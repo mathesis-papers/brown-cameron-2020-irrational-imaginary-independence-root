@@ -22,7 +22,7 @@
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
     "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
     "README.md": "da8cc30836ddcfecc546acddd718c93551d6607709da1c2cf2d666c42eeb6114",
-    "formalization/nodes.json": "00be34326b8c7299a2f0da720a0db44655a87eafb9aed0679b491da6b017aa40",
+    "formalization/nodes.json": "99135a5f323d2c202e57f1d847fcc6658c2208b4b51a291f1b3d20caeb2b6c2a",
     "manuscript/irrational-independence-roots/README.md": "5e8b7b396e101cf1658381c08c960301aa99f186db736b7ac1c0130a0f034590",
     "manuscript/irrational-independence-roots/metadata.json": "1df81aa8fed59f550a3c0d92a368989addd0dc443a0bb0bd5a4f488671a3a744",
     "manuscript/irrational-independence-roots/note.tex": "8495b4dbf98c1878a57bfb60184a3fe8dd588f07d4e26aba4407a6daac8c4bb2",
@@ -32,5 +32,5 @@
     "paper.pdf": "8b36f6dbab083efde142613d96bee54c63fcf16d1b5162c942241db719c4966b",
     "source.archive": "0c52badcb3542d61f02154a71f6ba20bfb61b10d9118ac2da7cd2641d6e2ec2a"
   },
-  "snapshot_identity": "a9e7c6ac29198007c90206569ccf44777c42346a6a4851e110ed30a5854b2c4b"
+  "snapshot_identity": "fe8a914a4e26dd6fceb503023b273a206a34adbd5c4843951a6da77ed72627a7"
 }
